@@ -18,6 +18,7 @@ on:
 
 jobs: # Cette section définit un job nommé "build". 
   build:
+    permissions: write-all
     runs-on: ubuntu-latest # Le job s'exécute sur un runner Ubuntu-latest.
 
     steps:
