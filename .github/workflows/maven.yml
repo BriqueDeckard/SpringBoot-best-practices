@@ -16,7 +16,7 @@ on:
   pull_request: # pull_request: Le workflow sera également exécuté pour chaque pull request ciblant la branche "master".
     branches: [ "master" ]
 
-jobs: # Cette section définit un job nommé "build". 
+jobs: # Cette section définit un job nommé "build".
   build:
     permissions: write-all
     runs-on: ubuntu-latest # Le job s'exécute sur un runner Ubuntu-latest.
