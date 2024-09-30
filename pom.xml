@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<parent>
+	<parent> <!-- defines the parent project from which this project inherits configurations. Here, it inherits from spring-boot-starter-parent with version 3.3.3. -->
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.3.3</version>
@@ -29,7 +29,7 @@
 	<properties>
 		<java.version>17</java.version>
 	</properties>
-	<dependencies>
+	<dependencies> <!-- This section lists all the external libraries your project depends on. -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-batch</artifactId>
@@ -86,15 +86,15 @@
 		</dependency>
 	</dependencies>
 
-	<build>
-		<plugins>
+	<build> <!-- defines how your project gets built. -->
+		<plugins> <!-- defines plugins used during the build process -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
+				<artifactId>spring-boot-maven-plugin</artifactId> <!--  helps package your project as a Spring Boot executable jar. -->
+				<configuration> <!-- configures the plugin behavior -->
 					<excludes>
 						<exclude>
-							<groupId>org.projectlombok</groupId>
+							<groupId>org.projectlombok</groupId> <!-- Lombok is only needed for compilation, not runtime -->
 							<artifactId>lombok</artifactId>
 						</exclude>
 					</excludes>
