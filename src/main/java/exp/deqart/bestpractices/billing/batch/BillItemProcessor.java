@@ -1,6 +1,6 @@
-package exp.deqart.best_practices.billing.batch;
+package exp.deqart.bestpractices.billing.batch;
 
-import exp.deqart.best_practices.billing.domain.Bill;
+import exp.deqart.bestpractices.billing.domain.Bill;
 import org.springframework.batch.item.ItemProcessor;
 
 public class BillItemProcessor implements ItemProcessor<Bill, Bill> {

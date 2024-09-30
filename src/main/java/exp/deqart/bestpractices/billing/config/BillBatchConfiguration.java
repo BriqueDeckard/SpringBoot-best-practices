@@ -1,4 +1,4 @@
-package exp.deqart.best_practices.billing.config;
+package exp.deqart.bestpractices.billing.config;
 
 import javax.sql.DataSource;
 import org.springframework.beans.factory.annotation.Autowired;

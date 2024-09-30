@@ -1,4 +1,4 @@
-package exp.deqart.best_practices.billing.domain;
+package exp.deqart.bestpractices.billing.domain;
 
 import jakarta.persistence.Id;
 
