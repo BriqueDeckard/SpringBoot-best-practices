@@ -1,4 +1,4 @@
-package exp.deqart.best_practices;
+package exp.deqart.bestpractices;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
